@@ -2,16 +2,12 @@
 
 This repository implements the TompHTTP bare server. See the specification [here](https://github.com/tomphttp/specifications/blob/master/BareServer.md).
 
-## Workers
+##
+In use with proxies! All you need to do is deploy this to cloudflare, get the worker url clone this [repo](https://github.com/MaxWeichers/UntitledProxy)(can be hosted static!) and put the workers url in the place bare server link
 
-WebSocket proxying is now fully supported since the previous effort to port the Bare server. This implementation uses KVNamespaces in order to store stateful WebSocket data.
+## What I did
 
-Currently, the namespace name is `BARE`. Any non-JSON strings in the KV namespace will cause the script to break.
-
-## Who this is for
-
-This port requires some technical knowledge (Cloudflare KV, Workers). You will have to modify some code in order to get it working.
-
+I fixed some things from this <a href="https://github.com/tomphttp/bare-server-worker">repo</a>
 ## Quickstart
 
 1. Clone this repository
