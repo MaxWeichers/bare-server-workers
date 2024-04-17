@@ -1,0 +1,25 @@
+{
+	"root": true,
+	"parser": "@typescript-eslint/parser",
+	"plugins": ["@typescript-eslint"],
+	"env": {
+		"node": true
+	},
+	"extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+	"rules": {
+		"indent": "off",
+		"quotes": "off",
+		"no-constant-condition": [
+			"error",
+			{
+				"checkLoops": false
+			}
+		],
+		"no-lone-blocks": "off",
+		"eqeqeq": "error",
+		"prefer-const": "error",
+		"no-var": "error",
+		"@typescript-eslint/consistent-type-imports": "error",
+		"@typescript-eslint/no-non-null-assertion": "off"
+	}
+}
